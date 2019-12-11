@@ -29,7 +29,8 @@ export class HomePage implements OnInit {
           // VictimGroup: (e.payload.doc.data() as any).VictimGroup,
           VictimPoints: (e.payload.doc.data() as any).VictimPoints,
         };
-      }).sort((a, b) => (a.VictimPoints > b.VictimPoints) ? -1 : 1);
+      });
+      // .sort((a, b) => (a.VictimPoints > b.VictimPoints) ? -1 : 1);
       console.log(this.victims);
       // this.groups = this.victims.map(v => v.groups);
     });

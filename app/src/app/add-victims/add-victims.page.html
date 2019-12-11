@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Add Victims</ion-title>
+    <ion-buttons slot="end">
+        <ion-button (click)="modalCtrl.dismiss()">Close</ion-button>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-input placeholder="Enter Victim Name" [(ngModel)]="victimName"></ion-input>
+        </ion-item>
+      </ion-col>
+      <!-- <ion-col>
+        <ion-item>
+          <ion-input placeholder="Enter Group" [(ngModel)]="victimGroup"></ion-input>
+        </ion-item>
+      </ion-col> -->
+    </ion-row>
+    <ion-row>
+      <ion-col text-center>
+        <ion-button (click)="create()" [disabled]="!victimName"> <!--&& !victimGroup-->
+          <ion-icon size="small" slot="icon-only" name="add"></ion-icon>
+          &nbsp;Create
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

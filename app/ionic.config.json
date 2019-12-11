@@ -1,5 +1,7 @@
 {
   "name": "inspection",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

@@ -1,6 +1,6 @@
 # Victim Game
 Social Experience Game
 
-##Frameworks
+## Frameworks
 * Ionic 4 w/ Angular 
 * Firebase
